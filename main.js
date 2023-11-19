@@ -37,12 +37,6 @@ bot.on("message", async (ctx) => {
               `Ushbu nomdagi trek matni hali qo'shilmagan yoki trek nomi noto'g'ri🤷‍♂️\nTekshirib qaytadan yuboring yoki matn qo'shilishini kuting\nAgar matn qo'shmoqchi bo'lsangiz @Janob_negativ'ga murojaat qiling`
             )
           );
-        setTimeout(() => {
-          bot.api.sendMessage(
-            -1002069272637,
-            `${firstName} | @${userName} wrote ${text}`
-          );
-        }, 30000);
       }
     } else if (
       status === "left" ||

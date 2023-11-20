@@ -7,7 +7,7 @@ const Api = process.env.API;
 
 bot.command("start", (ctx) =>
   ctx.reply(
-    `Assalomu alaykum <b>${ctx.from.first_name}</b>!\nMen Konsta va Shokir ijrosidagi treklarni topib beraman\nShunchaki izlayotgan trek nomini kiriting va trek matniga ega bo'ling😊\n\nBot ishlashi bilan muammolar yuzaga kelsa @umidxon_feedback_bot'ga yozib qoldiring`,
+    `Assalomu alaykum <b>${ctx.from.first_name}</b>!\nMen Konsta va Shokir ijrosidagi treklarni topib beraman\nShunchaki izlayotgan trek nomini kiriting va trek matniga ega bo'ling😊\n\nBot ishlashi bilan muammolar yuzaga kelsa @umidxon_polatxonov'ga murojaat qiling`,
     { parse_mode: "HTML" }
   )
 );

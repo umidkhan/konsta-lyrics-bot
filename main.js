@@ -31,10 +31,6 @@ bot.on("message", async (ctx) => {
         "Ushbu nomdagi trek matni hali qo'shilmagan yoki trek nomi noto'g'ri🤷‍♂️\nTekshirib qaytadan yuboring yoki matn qo'shilishini kuting\nAgar matn qo'shmoqchi bo'lsangiz @Janob_negativ'ga murojaat qiling"
       )
     );
-  await bot.api.sendMessage(
-    -1002069272637,
-    `${ctx.from.first_name} | @${ctx.from.username} wrote ${text}`
-  );
 });
 
 bot.start();

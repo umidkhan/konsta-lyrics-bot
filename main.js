@@ -25,10 +25,19 @@ bot.on("message", async (ctx) => {
       ctx.reply(
         `${res.data}\n\n🤖@Konsta_matnlari_bot\n@LyricsLever kanali bilan hamkorlikda\n\n⚠️Matndan biror xato topgan bo'lsangiz @Janob_negativ'ga murojaat qiling`
       );
+      setTimeout(() => {
+        bot.api
+          .sendMessage(
+            "-1002069272637",
+            `${ctx.chat.first_name} | @${ctx.chat.username} wrote ${ctx.message.text}`
+          )
+          .catch((err) => console.log(err));
+      }, 4000);
     })
-    .catch(() =>
+    .catch((err) =>
       ctx.reply(
-        "Ushbu nomdagi trek matni hali qo'shilmagan yoki trek nomi noto'g'ri🤷‍♂️\nTekshirib qaytadan yuboring yoki matn qo'shilishini kuting\nAgar matn qo'shmoqchi bo'lsangiz @Janob_negativ'ga murojaat qiling"
+        "Ushbu nomdagi trek matni hali qo'shilmagan yoki trek nomi noto'g'ri🤷‍♂️\nTekshirib qaytadan yuboring yoki matn qo'shilishini kuting\nAgar matn qo'shmoqchi bo'lsangiz @Janob_negativ'ga murojaat qiling",
+        console.log(err)
       )
     );
 });
